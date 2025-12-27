@@ -31,6 +31,7 @@ ENV_VARS="
 -e MARIADB_SERVER_URI=mariadb
 -e MYSQL_ROOT_PASSWORD=uminho
 -e KAFKA_SERVER_URI=kafka:29092
+-e SERVER_PORT=9001
 "
 
 VOLUMES="
@@ -41,7 +42,7 @@ TRAEFIK_LABELS="
 --label traefik.enable=true
 --label traefik.http.routers.files.rule=Host(\`files.localhost\`)
 --label traefik.http.routers.files.entrypoints=web
---label traefik.http.services.files.loadbalancer.server.port=8081
+--label traefik.http.services.files.loadbalancer.server.port=9001
 "
 
 config_server_ready() {
