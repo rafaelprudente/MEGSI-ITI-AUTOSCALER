@@ -35,7 +35,7 @@ ENV_VARS="
 "
 
 VOLUMES="
--v /Users/rafaelrolimprudentedossantos/work/studies/mestrado/ITI/UMDRIVEFILES:/mnt/NAS
+-v /mnt/NAS:/mnt/NAS
 "
 
 TRAEFIK_LABELS="
