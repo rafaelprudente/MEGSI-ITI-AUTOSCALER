@@ -41,7 +41,7 @@ TRAEFIK_LABELS="
 --label traefik.enable=true
 --label traefik.http.routers.files.rule=Host(\`files.localhost\`)
 --label traefik.http.routers.files.entrypoints=web
---label traefik.http.services.files.loadbalancer.server.port=8080
+--label traefik.http.services.files.loadbalancer.server.port=8081
 "
 
 config_server_ready() {
